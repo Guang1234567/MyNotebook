@@ -1,9 +1,19 @@
 {
   "folders": [
     {
+      "key": "dc7eec7bdc9d8aad1abc",
+      "color": "#E8D252",
+      "name": "备忘录"
+    },
+    {
+      "key": "2f1d564141fa6e863127",
+      "color": "#FF8E00",
+      "name": "生活"
+    },
+    {
       "key": "a3a05a199390ca61391f",
       "color": "#E8D252",
-      "name": "test"
+      "name": "编程技术"
     }
   ],
   "version": "1.0"

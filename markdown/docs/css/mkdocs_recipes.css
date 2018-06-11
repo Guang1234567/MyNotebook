@@ -1,0 +1,1 @@
+// https://github.com/mkdocs/mkdocs/wiki/MkDocs-Recipes#add-support-for-checkbox-lists// Bold H2 titles in the menuli.toctree-l2 > a:link,li.toctree-l2 > a:visited {  font-weight: bold;  color: #404040;  margin-left: -6px;}// Dark Theme Syntax Higlightingpre {  background-color: transparent;  border: none;}code {  background-color: transparent;}

@@ -13,6 +13,8 @@ markdown_extensions:
   - smarty
   - sane_lists
   - mdx_math
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML'
@@ -20,10 +22,16 @@ extra_javascript:
 extra_css:
   - css/style.css
   - css/admonition_fix.css
+  - css/pymdownx_tasklist_custom.css
+  - css/mkdocs_recipes.css
 
 docs_dir: 'docs'
 
-theme: yeti
+#theme: yeti
+
+theme:
+  name: yeti
+  custom_dir: custom_theme
 
 pages:
   - 主页: 'index.md'
