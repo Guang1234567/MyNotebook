@@ -3,6 +3,9 @@
 {% block styles %}
     {{ super() }}
     <link rel="stylesheet" href="{{ base_url }}/css/ekko-lightbox.min.css">
+    <!-- Material icons as a default iconset -->
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 {% endblock styles %}
 
 {% block libs %}
@@ -15,12 +18,11 @@
     <script>
         (function(){
             $("img").each(function(index,value){
-
                 var aDom=$("<a></a>").attr({"href":$(value).attr("src")+"?inlineId=myOnPageContent"}).addClass("ekko-lightbox");
                 $(value).wrap(aDom);
-
             });
         })();
+
         $(document).on('click', '[class="ekko-lightbox"]', function(event) {
             event.preventDefault();
             $(this).ekkoLightbox();

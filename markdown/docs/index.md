@@ -19,8 +19,8 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
   
   
 <div class="progress">
-  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-
+  <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <p class="progress-label">50%</p>
   </div>
 </div>
 
@@ -30,6 +30,36 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
         <p class="progress-label">25%</p>
     </div>
 </div>
+
+<div class="progress">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+
+[=0% "0%"]
+[=5% "5%"]
+[=25% "25%"]
+[=45% "45%"]
+[=65% "65%"]
+[=85% "85%"]
+[=100% "100%"]
+
+[=0%]{: .thin}
+[=5%]{: .thin}
+[=25%]{: .thin}
+[=45%]{: .thin}
+[=65%]{: .thin}
+[=85%]{: .thin}
+[=100%]{: .thin}
 
 
 <span class="badge badge-pill badge-primary">Primary</span>
@@ -159,5 +189,47 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
 * [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
 * [ ] Nulla vel eros venenatis, imperdiet enim id, faucibus nisi
 
+## LightBox Example
 
 ![](https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=d569af264b10b912a0c1f0fef3fcfcb5/42a98226cffc1e1792fa64ac4690f603728de9e2.jpg)
+
+
+## Critic Markup Preview Example
+
+Here is some {--*incorrect*--} Markdown.  I am adding this{++ here++}.  Here is some more {--text
+ that I am removing--}text.  And here is even more {++text that I 
+ am ++}adding.{~~
+
+~>  ~~}Paragraph was deleted and replaced with some spaces.{~~  ~>
+
+~~}Spaces were removed and a paragraph was added.
+
+And here is a comment on {==some
+ text==}{>>This works quite well. I just wanted to comment on it.<<}. Substitutions {~~is~>are~~} great!
+
+General block handling.
+
+{--
+
+* test remove
+* test remove
+* test remove
+    * test remove
+* test remove
+
+--}
+
+{++
+
+* test add
+* test add
+* test add
+    * test add
+* test add
+
+++}
+
+## 图标测试
+<span class="sidenav-link-icon">
+<i class="material-icons">videocam</i>
+</span>
